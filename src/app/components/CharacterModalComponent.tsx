@@ -51,7 +51,7 @@ const CharacterModalComponent = ({ openModal, setOpenModal, character }: Charact
         <div>
             <Modal theme={customModal} size={'4xl'} dismissible show={openModal} onClose={() => setOpenModal(false)}>
                 <Modal.Body>
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-3 gap-4 justify-center">
                         <div className='col-span-1 flex justify-center'>
                             {character?.image ? <img src={character?.image} alt="" className='h-[300px] rounded-xl' /> :
                                 <Image
