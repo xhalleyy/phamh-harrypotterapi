@@ -9,6 +9,11 @@ module.exports = {
     flowbite.content(),
   ],
   theme: {
+    fontFamily: {
+      "kodchasan-reg": ["kodchasan-reg"],
+      "kodchasan-medium": ["kodchasan-medium"],
+      "kodchasan-semi": ["kodchasan-semi"],
+    },
     extend: {
     },
   },

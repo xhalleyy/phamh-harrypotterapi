@@ -53,19 +53,22 @@ const CharacterModalComponent = ({ openModal, setOpenModal, character }: Charact
                 <Modal.Body>
                     <div className="grid grid-cols-3 gap-4 justify-center">
                         <div className='col-span-1 flex justify-center'>
-                            {character?.image ? <img src={character?.image} alt="" className='h-[300px] rounded-xl' /> :
+                            {character?.image ? 
+                            <div className=' object-fill'>
+                                <img src={character?.image} alt="" className='h-[300px] object-contain ' /> 
+                            </div>
+                            :
                                 <Image
                                     src="/default.jpg"
                                     width={300}
                                     height={300}
                                     alt="Picture of the author"
-                                    className='rounded-xl'
                                     priority
                                 />
                             }
                         </div>
                         <div className='col-span-2'>
-                            <h1 className="leading-relaxed text-2xl text-white font-bold text-center">
+                            <h1 className="leading-relaxed text-2xl text-white font-bold text-center font-kodchasan-semi">
                                 {character?.name}
                                 <hr />
                             </h1>

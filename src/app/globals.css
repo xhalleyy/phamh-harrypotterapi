@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  @font-face {
+      font-family: kodchasan-reg;
+      src: url(../utils/Kodchasan-Regular.ttf);
+  }
+
+  @font-face {
+      font-family: kodchasan-medium;
+      src: url(../utils/Kodchasan-Medium.ttf);
+  }
+
+  @font-face {
+      font-family: kodchasan-semi;
+      src: url(../utils/Kodchasan-SemiBold.ttf);
+  }
+
+}
+
 .harrypbg {
   background: url(../utils/harrypotterbg2.png) no-repeat center center fixed; 
   background-size: cover;
